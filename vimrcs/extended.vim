@@ -177,4 +177,7 @@ endfunc
 highlight Normal ctermfg=grey ctermbg=black
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
+hi Directory ctermfg=red guifg=black
+hi MatchParen cterm=none ctermbg=green ctermfg=blue
+hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=darkred guifg=white
 
