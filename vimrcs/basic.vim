@@ -52,10 +52,8 @@ nmap <leader>w :w!<cr>
 " (useful for handling the permission-denied error)
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
-
 " Show relative line numbers
 " set relativenumber
-
 
 " Show the line numbers
 set number
