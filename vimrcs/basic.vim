@@ -53,10 +53,10 @@ nmap <leader>w :w!<cr>
 command! W execute 'w !sudo tee % > /dev/null' <bar> edit!
 
 " Show relative line numbers
-" set relativenumber
+set number relativenumber
 
 " Show the line numbers
-set number
+" set number
 
 packloadall
 let g:prettier#autoformat = 0
