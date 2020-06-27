@@ -111,7 +111,7 @@ let g:multi_cursor_quit_key            = '<Esc>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => surround.vim config
-" Annotate strings with gettext 
+" Annotate strings with gettext
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 vmap Si S(i_<esc>f)
 au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
@@ -184,5 +184,16 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 " => VUEJS ()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-packloadall
+let g:vue_pre_processors = []
+
+" vim airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'default'
+
+
+" PLUG
+
+call plug#begin('~/.vim_runtime/my_plugins')
+  Plug 'artanikin/vim-synthwave84'
+call plug#end()
 
