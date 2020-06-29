@@ -86,7 +86,7 @@ set grepprg=/bin/grep\ -nH
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=35
+let g:NERDTreeWinSize=30
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
@@ -194,5 +194,8 @@ let g:airline#extensions#tabline#formatter = 'default'
 
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'artanikin/vim-synthwave84'
+  Plug 'powerline/fonts'
 call plug#end()
+
+" Powerline Fonts
 
