@@ -173,11 +173,13 @@ func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
-hi Normal ctermfg=lightblue ctermbg=black
+" hi Normal ctermfg=lightblue ctermbg=black
+hi Normal ctermbg=black
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi Directory ctermfg=red guifg=black
-hi MatchParen cterm=none ctermbg=green ctermfg=blue
+hi MatchParen cterm=none ctermbg=darkblue ctermfg=white
 hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=darkred guifg=white
-hi LineNr ctermfg=white ctermbg=NONE
-hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black
+hi LineNr ctermfg=green ctermbg=black
+hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black ctermbg=lightblue
+hi Folded ctermbg=242 ctermfg=50
