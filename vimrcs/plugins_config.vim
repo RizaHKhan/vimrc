@@ -189,13 +189,5 @@ let g:vue_pre_processors = []
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 
-
-" PLUG
-
-call plug#begin('~/.vim_runtime/my_plugins')
-  Plug 'artanikin/vim-synthwave84'
-  Plug 'powerline/fonts'
-call plug#end()
-
-" Powerline Fonts
+command! -nargs=0 P :CocCommand prettier.formatFile
 
