@@ -158,6 +158,8 @@ let g:ale_linters = {
 \   'go': ['go', 'golint', 'errcheck']
 \}
 
+let g:ale_fixers = ['prettier', 'eslint']
+
 nmap <silent> <leader>a <Plug>(ale_next_wrap)
 
 " Disabling highlighting
@@ -172,6 +174,8 @@ let g:ale_lint_on_enter = 0
 let b:ale_linter_aliases = ['javascript', 'vue']
 " " Select the eslint and vls linters.
 let b:ale_linters = ['eslint', 'vls']"
+
+let g:ale_completion_enabled = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
@@ -189,5 +193,3 @@ let g:vue_pre_processors = []
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'default'
 
-command! -nargs=0 P :CocCommand prettier.formatFile
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
