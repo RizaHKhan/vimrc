@@ -320,9 +320,13 @@ endif
 map <leader>ss :setlocal spell!<cr>
 
 " Shortcuts using <leader>
+" Next spelling error
 map <leader>sn ]s
+" Previous spelling error
 map <leader>sp [s
+" Add word to dictionary
 map <leader>sa zg
+" Suggestions
 map <leader>s? z=
 
 
