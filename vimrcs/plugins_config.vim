@@ -4,7 +4,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
@@ -176,6 +175,8 @@ let b:ale_linter_aliases = ['javascript', 'vue']
 let b:ale_linters = ['eslint', 'vls']"
 
 let g:ale_completion_enabled = 1
+
+nmap <Esc> :call coc#float#close_all() <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
