@@ -29,6 +29,7 @@ if exists('$TMUX')
     endif
 endif
 
+set termguicolors
 
 """"""""""""""""""""""""""""""
 " => Twig section
