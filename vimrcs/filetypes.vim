@@ -6,10 +6,6 @@ au FileType javascript setl fen
 au FileType javascript setl nocindent
 
 au FileType javascript imap <C-t> console.log(
-au FileType javascript imap <C-a> alert();<esc>hi
-
-au FileType javascript inoremap <buffer> $r return
-au FileType javascript inoremap <buffer> $f // --- PH<esc>FP2xi
 
 function! JavaScriptFold()
     setl foldmethod=syntax
@@ -45,9 +41,3 @@ autocmd BufRead *.twig set syntax=html filetype=html
 """"""""""""""""""""""""""""""
 let vim_markdown_folding_disabled = 1
 
-
-""""""""""""""""""""""""""""""
-" => Ruby Section
-""""""""""""""""""""""""""""""
-
-set re=1
