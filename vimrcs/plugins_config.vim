@@ -1,4 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUG
+"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+call plug#begin('~/.vim_runtime/my_plugins')
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Important:
 "       This requires that you install https://github.com/amix/vimrc !
 "
@@ -176,7 +184,7 @@ let b:ale_linters = ['eslint', 'vls']"
 
 let g:ale_completion_enabled = 1
 
-nmap <Esc> :call coc#float#close_all() <CR>
+" nmap <Esc> :call coc#float#close_all() <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
