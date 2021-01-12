@@ -381,4 +381,3 @@ let g:user_emmet_leader_key=','
 
 " Enable only in normal mode
 let g:user_emmet_mode='n'    "only enable normal mode functions.
-"
