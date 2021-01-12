@@ -4,6 +4,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'mattn/emmet-vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -372,3 +373,12 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => EMMET
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap the trigger keys
+let g:user_emmet_leader_key=','
+
+" Enable only in normal mode
+let g:user_emmet_mode='n'    "only enable normal mode functions.
+"
