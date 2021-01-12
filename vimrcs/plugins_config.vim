@@ -6,19 +6,13 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important:
-"       This requires that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """"""""""""""""""""""""""""""
-" => Load pathogen paths
+" => Load pathogen paths - Try to use Plug instead
 """"""""""""""""""""""""""""""
 let s:vim_runtime = expand('<sfile>:p:h')."/.."
 call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
 call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
+" call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
 call pathogen#helptags()
 
 
@@ -37,7 +31,6 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 let MRU_Max_Entries = 400
 map <leader>f :MRU<CR>
-
 
 """"""""""""""""""""""""""""""
 " => YankStack
@@ -127,7 +120,7 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => lightline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'wombat',
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'readonly', 'filename', 'modified'] ],
@@ -144,8 +137,21 @@ let g:lightline = {
       \   'fugitive': '(exists("*FugitiveHead") && ""!=FugitiveHead())'
       \ },
       \ 'separator': { 'left': ' ', 'right': ' ' },
-      \ 'subseparator': { 'left': ' ', 'right': ' ' }
+      \ 'subseparator': { 'left': ' ', 'right': ' ' },
+      \ 'component_function': {
+      \   'filename': 'LightlineFilename'
+      \ },
       \ }
+
+function! LightlineFilename()
+    let root = fnamemodify(get(b:, 'git_dir'), ':h')
+    let path = expand('%:p')
+    if path[:len(root)-1] ==# root
+      return path[len(root)+1:]
+    endif
+    return expand('%')
+endfunction
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Vimroom
@@ -184,7 +190,7 @@ let b:ale_linters = ['eslint', 'vls']"
 
 let g:ale_completion_enabled = 1
 
-" nmap <Esc> :call coc#float#close_all() <CR>
+nmap <Esc> :call coc#float#close_all() <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
