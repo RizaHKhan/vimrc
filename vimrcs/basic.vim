@@ -374,9 +374,6 @@ set wildignore+=*/node_modules/*
 " Remove trailing spaces upon save
 autocmd BufWritePre * %s/\s\+$//e
 
-" Adding Converting HTML Tags Script
-inoremap <C-t> <Esc>S<Esc>ppi</<Esc>A><Esc>kA><Esc>I<<Esc>Jxi
-
 set nowrap
 
 set statusline+=%F

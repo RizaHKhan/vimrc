@@ -5,6 +5,7 @@
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'mattn/emmet-vim'
+  Plug 'APZelos/blamer.nvim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -381,3 +382,9 @@ let g:user_emmet_leader_key=','
 
 " Enable only in normal mode
 let g:user_emmet_mode='n'    "only enable normal mode functions.
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => GIT BLAMER
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:blamer_enabled = 1
+nmap <silent> gb :BlamerToggle<cr>
