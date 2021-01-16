@@ -374,7 +374,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => EMMET
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -388,7 +387,6 @@ let g:user_emmet_mode='n'    "only enable normal mode functions.
 " => GIT BLAMER
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <silent> gb :BlamerToggle<cr>
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => MERGINAL
