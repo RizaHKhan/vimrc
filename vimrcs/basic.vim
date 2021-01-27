@@ -376,5 +376,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 set nowrap
 
+" Some status line additions
 set statusline+=%F
 set isk+=- " Search words that include a dash in them
