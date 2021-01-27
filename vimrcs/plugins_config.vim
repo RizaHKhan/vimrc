@@ -187,7 +187,7 @@ let b:ale_linters = ['eslint', 'vls']"
 
 let g:ale_completion_enabled = 1
 
-nmap <Esc> :call coc#float#close_all() <CR>
+" nmap <Esc> :call coc#float#close_all() <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
@@ -367,7 +367,6 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-nmap <silent> mm :CocRestart<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => EMMET
