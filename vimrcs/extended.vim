@@ -27,9 +27,12 @@ set guioptions-=R
 set guioptions-=l
 set guioptions-=L
 
+set t_Co=256
+set t_ut=
+
 " Colorscheme
 set background=dark
-colorscheme gruvbox
+colorscheme codedark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
@@ -183,3 +186,5 @@ hi LineNr ctermfg=green ctermbg=black
 hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black ctermbg=lightblue
 hi Folded ctermbg=242 ctermfg=50
 highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=NONE guifg=#ffffff
+hi Directory guifg=#4CAF50 ctermfg=black
+

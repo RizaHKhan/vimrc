@@ -114,13 +114,11 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax enable
 
-" Enable 256 colors palette in Gnome Terminal
-if $COLORTERM == 'gnome-terminal'
-    set t_Co=256
-endif
+set t_Co=256
+set t_ut=
 
 try
-  colorscheme gruvbox
+  colorscheme codedark
 catch
 endtry
 
@@ -379,3 +377,5 @@ set nowrap
 " Some status line additions
 set statusline+=%F
 set isk+=- " Search words that include a dash in them
+
+set encoding=UTF-8
