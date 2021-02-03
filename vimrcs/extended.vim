@@ -1,11 +1,4 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important:
-"       This requries that you install https://github.com/amix/vimrc !
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set font according to system
@@ -185,6 +178,6 @@ hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=darkred guifg=white
 hi LineNr ctermfg=green ctermbg=black
 hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black ctermbg=lightblue
 hi Folded ctermbg=242 ctermfg=50
-highlight CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=NONE guifg=#ffffff
+hi CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=NONE guifg=#ffffff
 hi Directory guifg=#4CAF50 ctermfg=black
 
