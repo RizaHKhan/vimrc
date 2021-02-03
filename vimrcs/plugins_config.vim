@@ -13,7 +13,6 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc'  }
   Plug 'tomasiser/vim-code-dark'
   Plug 'preservim/nerdtree'
-  Plug 'ryanoasis/vim-devicons'
   Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
