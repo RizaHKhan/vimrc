@@ -11,7 +11,8 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc'  }
-  Plug 'tomasiser/vim-code-dark'
+  " Plug 'tomasiser/vim-code-dark'
+  Plug 'junegunn/seoul256.vim'
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
 call plug#end()
