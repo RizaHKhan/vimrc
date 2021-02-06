@@ -177,8 +177,13 @@ nmap <Esc> :call coc#float#close_all() <CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:gitgutter_enabled=0
-nnoremap <silent> <leader>d :GitGutterToggle<cr>
+let g:gitgutter_enabled=1
+" nnoremap <silent> <leader>d :GitGutterToggle<cr>
+nmap <F1> <Plug>(GitGutterPrevHunk)
+nmap <F2> <Plug>(GitGutterNextHunk)
+nmap <F3> <Plug>(GitGutterStageHunk)
+nmap <F4> <Plug>(GitGutterUndoHunk)
+nmap <leader>d <Plug>(GitGutterPreviewHunk)
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VUEJS ()
@@ -443,3 +448,4 @@ command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
   \   'git grep --line-number '.shellescape(<q-args>), 0,
   \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
+
