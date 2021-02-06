@@ -24,8 +24,10 @@ set t_Co=256
 set t_ut=
 
 " Colorscheme
+let g:seoul256_background = 234
+colo seoul256
 set background=dark
-colorscheme codedark
+colorscheme seoul256
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
@@ -172,12 +174,10 @@ endfunc
 hi Normal ctermbg=black
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
-hi Directory ctermfg=red guifg=black
 hi MatchParen cterm=none ctermbg=darkblue ctermfg=white
 hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=darkred guifg=white
 hi LineNr ctermfg=green ctermbg=black
 hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black ctermbg=lightblue
 hi Folded ctermbg=242 ctermfg=50
 hi CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=NONE guifg=#ffffff
-hi Directory guifg=#4CAF50 ctermfg=black
 
