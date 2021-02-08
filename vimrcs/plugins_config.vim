@@ -143,36 +143,7 @@ let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
 nnoremap <silent> <leader>z :Goyo<cr>
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Ale (syntax checker and linter)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ale_linters = {
-\   'javascript': ['jshint'],
-\   'python': ['flake8'],
-\   'go': ['go', 'golint', 'errcheck']
-\}
-
-let g:ale_fixers = ['prettier', 'eslint']
-
-nmap <silent> <leader>a <Plug>(ale_next_wrap)
-
-" Disabling highlighting
-let g:ale_set_highlights = 1
-let g:ale_fix_on_save = 1
-
-" Only run linting when saving the file
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_enter = 0
-
-" Run both javascript and vue linters for vue files.
-let b:ale_linter_aliases = ['javascript', 'vue']
-" " Select the eslint and vls linters.
-let b:ale_linters = ['eslint', 'vls']"
-
-let g:ale_completion_enabled = 1
-
-nmap <Esc> :call coc#float#close_all() <CR>
+" nmap <Esc> :call coc#float#close_all() <CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
