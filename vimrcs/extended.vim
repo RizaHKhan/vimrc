@@ -168,8 +168,7 @@ func! CurrentFileDir(cmd)
     return a:cmd . " " . expand("%:p:h") . "/"
 endfunc
 
-" hi Normal ctermfg=lightblue ctermbg=black
-hi Normal ctermbg=black
+highlight Normal guibg=NONE ctermbg=NONE
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi MatchParen cterm=none ctermbg=darkblue ctermfg=white
