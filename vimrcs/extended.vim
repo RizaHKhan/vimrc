@@ -24,10 +24,8 @@ set t_Co=256
 set t_ut=
 
 " Colorscheme
-let g:seoul256_background = 234
-colo seoul256
 set background=dark
-colorscheme seoul256
+colorscheme codedark
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
@@ -169,6 +167,8 @@ func! CurrentFileDir(cmd)
 endfunc
 
 highlight Normal guibg=NONE ctermbg=NONE
+highlight SignColumn guibg=NONE
+highlight LineNr guibg=NONE
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi MatchParen cterm=none ctermbg=darkblue ctermfg=white
