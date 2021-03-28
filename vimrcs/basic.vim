@@ -18,6 +18,7 @@ let mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+nmap <leader>wq :wq<cr>
 
 " Fast quit
 nmap <leader>q :q!<cr>

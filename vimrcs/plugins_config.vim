@@ -151,13 +151,10 @@ nnoremap <silent> <leader>z :Goyo<cr>
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
-" nnoremap <silent> <leader>d :GitGutterToggle<cr>
-nmap <F1> <Plug>(GitGutterPrevHunk)
-nmap <F2> <Plug>(GitGutterNextHunk)
 nmap <F3> <Plug>(GitGutterStageHunk)
 nmap <F4> <Plug>(GitGutterUndoHunk)
 nmap <leader>d <Plug>(GitGutterPreviewHunk)
-
+nmap <leader>g :G<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VUEJS ()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -364,9 +361,11 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <C-f> :Files<CR>
+" map <C-f> :Files<CR>
+map <F1> :Files<CR>
+" nnoremap <leader>g :Rg<CR>
+nnoremap <F2> :Rg<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>g :Rg<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
