@@ -25,7 +25,12 @@ set t_ut=
 
 " Colorscheme
 set background=dark
-colorscheme codedark
+
+let g:gruvbox_italic = '1'
+let g:gruvbox_italicize_strings = '1'
+let g:gruvbox_contrast_dark = 'soft'
+
+colorscheme gruvbox
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs

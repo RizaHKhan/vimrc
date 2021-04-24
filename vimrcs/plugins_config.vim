@@ -1,6 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " PLUG
-"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -11,12 +10,12 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc'  }
-  " Plug 'junegunn/seoul256.vim'
-  Plug 'tomasiser/vim-code-dark'
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'leafgarland/typescript-vim'
   Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'othree/html5.vim'
+  Plug 'morhetz/gruvbox'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -71,7 +70,8 @@ snor <C-j> <esc>i<right><C-r>=snipMate#TriggerSnippet()<cr>
 let g:NERDTreeWinPos = "left"
 let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
-let g:NERDTreeWinSize=30
+let g:NERDTreeWinSize=40
+let g:NERDTreeHijackNetrw=0
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark<Space>
 map <leader>nf :NERDTreeFind<cr>
@@ -159,7 +159,7 @@ nmap <leader>g :G<cr>
 " => VUEJS ()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:vue_pre_processors = []
+let g:vue_pre_processors = 'detect_on_enter'
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => COC
