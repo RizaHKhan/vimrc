@@ -16,6 +16,7 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'othree/html5.vim'
   Plug 'morhetz/gruvbox'
+  Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
