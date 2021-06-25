@@ -12,11 +12,15 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc'  }
   Plug 'preservim/nerdtree'
   Plug 'Xuyuanp/nerdtree-git-plugin'
-  Plug 'leafgarland/typescript-vim'
+  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'othree/html5.vim'
   Plug 'morhetz/gruvbox'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'tpope/vim-dispatch'             "| Optional
+  Plug 'tpope/vim-projectionist'        "|
+  Plug 'noahfrederick/vim-composer'     "|
+  Plug 'noahfrederick/vim-laravel'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -362,7 +366,7 @@ let g:fzf_action = {
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <C-f> :Files<CR>
+map <leader>f :Files<CR>
 nnoremap <leader>r :Rg<CR>
 map <leader>b :Buffers<CR>
 nnoremap <leader>t :Tags<CR>
