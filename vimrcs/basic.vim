@@ -205,6 +205,10 @@ map tc :tabclose<cr>
 map tm :tabmove
 map t<leader> :tabnext
 
+" Open terminal history and post whatever is under the line
+" map te yyq:p
+:nnoremap te :.w !bash<CR>
+
 " Let 'tl' toggle between this and the last accessed tab
 let g:lasttab = 1
 nmap <Leader>tl :exe "tabn ".g:lasttab<CR>
@@ -351,3 +355,14 @@ set statusline+=%F
 set isk+=- " Search words that include a dash in them
 
 set encoding=UTF-8
+
+" Pressing `<leader>ss` will toggle spell checking:
+
+map <leader>ss :setlocal spell!<cr>
+
+" Shortcuts using `<leader>` instead of special characters:
+
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
