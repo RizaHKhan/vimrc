@@ -201,7 +201,7 @@ nnoremap th :tabprev<CR>
 nnoremap tj :tabfirst<CR>
 nnoremap tk :tablast<CR>
 map to :tabonly<cr>
-map tc :tabclose<cr>
+map tc :tabe %<cr>
 map tm :tabmove
 map t<leader> :tabnext
 
@@ -366,3 +366,6 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+
+" Saving wihout formatting
+map <leader>aa :noa w<cr>
