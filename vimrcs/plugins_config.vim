@@ -21,6 +21,7 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'tpope/vim-projectionist'        "|
   Plug 'noahfrederick/vim-composer'     "|
   Plug 'noahfrederick/vim-laravel'
+  Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -159,7 +160,11 @@ let g:gitgutter_enabled=1
 nmap <F3> <Plug>(GitGutterStageHunk)
 nmap <F4> <Plug>(GitGutterUndoHunk)
 nmap <leader>d <Plug>(GitGutterPreviewHunk)
+" Vim Fugitive
+nmap <leader>gh :diffget //3<CR>
+nmap <leader>gu :diffget //2<CR>
 nmap <leader>g :G<cr>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VUEJS ()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
