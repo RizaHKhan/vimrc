@@ -140,8 +140,10 @@ nnoremap <silent> <leader>z :Goyo<cr>
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
-" nmap <F3> <Plug>(GitGutterStageHunk)
-" nmap <F4> <Plug>(GitGutterUndoHunk)
+nmap <F1> <Plug>(GitGutterNextHunk)
+nmap <F2> <Plug>(GitGutterPrevHunk)
+nmap <F3> <Plug>(GitGutterStageHunk)
+nmap <F4> <Plug>(GitGutterUndoHunk)
 nmap <leader>d <Plug>(GitGutterPreviewHunk)
 " Vim Fugitive
 nmap <leader>gh :diffget //3<CR>
