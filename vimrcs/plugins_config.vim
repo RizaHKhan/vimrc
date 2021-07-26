@@ -125,25 +125,14 @@ function! LightlineFilename()
     return expand('%')
 endfunction
 
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vimroom
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:goyo_width=100
-let g:goyo_margin_top = 2
-let g:goyo_margin_bottom = 2
-nnoremap <silent> <leader>z :Goyo<cr>
-
-" nmap <Esc> :call coc#float#close_all() <CR>
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
-nmap <F1> <Plug>(GitGutterNextHunk)
-nmap <F2> <Plug>(GitGutterPrevHunk)
-nmap <F3> <Plug>(GitGutterStageHunk)
-nmap <F4> <Plug>(GitGutterUndoHunk)
+nmap <F1> <Plug>(GitGutterPrevHunk)
+nmap <F2> <Plug>(GitGutterNextHunk)
+nmap gsh <Plug>(GitGutterStageHunk)
+nmap guh <Plug>(GitGutterUndoHunk)
 nmap <leader>d <Plug>(GitGutterPreviewHunk)
 " Vim Fugitive
 nmap <leader>gh :diffget //3<CR>
