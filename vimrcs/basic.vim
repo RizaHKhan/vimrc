@@ -369,3 +369,9 @@ map <leader>s? z=
 
 " Saving wihout formatting
 map <leader>aa :noa w<cr>
+
+" Capital Y
+nnoremap Y y$
+
+nnoremap fi yiw:Rg<Space><C-R>"<cr>
+nnoremap fa yaw:Rg<Space><C-R>"<cr>
