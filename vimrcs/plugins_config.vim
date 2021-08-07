@@ -129,15 +129,15 @@ endfunction
 " => Git gutter (Git diff)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=1
-nmap <F1> <Plug>(GitGutterPrevHunk)
-nmap <F2> <Plug>(GitGutterNextHunk)
-nmap gsh <Plug>(GitGutterStageHunk)
-nmap guh <Plug>(GitGutterUndoHunk)
-nmap <leader>d <Plug>(GitGutterPreviewHunk)
+nmap gk <Plug>(GitGutterPrevHunk)
+nmap gj <Plug>(GitGutterNextHunk)
+nmap gs <Plug>(GitGutterStageHunk)
+nmap gu <Plug>(GitGutterUndoHunk)
+nmap gp <Plug>(GitGutterPreviewHunk)
+" nmap gs :G<cr>
 " Vim Fugitive
 nmap <leader>gh :diffget //3<CR>
 nmap <leader>gu :diffget //2<CR>
-nmap <leader>g :G<cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VUEJS ()
@@ -368,6 +368,7 @@ let g:fzf_colors =
 command! -bang -nargs=? -complete=dir Files
     \ call fzf#vim#files(<q-args>, fzf#vim#with_preview({'options': ['--layout=reverse', '--info=inline']}), <bang>0)
 
+nnoremap ff :call fzf#vim#files('.', {'options':'--query '.expand('<cword>')})<CR>
 
 " Get text in files with Rg
 command! -bang -nargs=* Rg
@@ -383,6 +384,9 @@ function! RipgrepFzf(query, fullscreen)
   let spec = {'options': ['--phony', '--query', a:query, '--bind', 'change:reload:'.reload_command]}
   call fzf#vim#grep(initial_command, 1, fzf#vim#with_preview(spec), a:fullscreen)
 endfunction
+
+
+noremap fw :call RipgrepFzf(expand('<cword>'),0)<CR>
 
 command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 
