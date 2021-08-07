@@ -2,6 +2,7 @@
 " PLUG
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/my_plugins')
+  Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'mattn/emmet-vim'
   Plug 'APZelos/blamer.nvim'
