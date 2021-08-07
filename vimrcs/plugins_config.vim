@@ -134,6 +134,7 @@ nmap gj <Plug>(GitGutterNextHunk)
 nmap gs <Plug>(GitGutterStageHunk)
 nmap gu <Plug>(GitGutterUndoHunk)
 nmap gp <Plug>(GitGutterPreviewHunk)
+nnoremap gc :Gcommit<CR>
 " nmap gs :G<cr>
 " Vim Fugitive
 nmap <leader>gh :diffget //3<CR>
