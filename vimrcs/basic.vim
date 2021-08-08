@@ -374,3 +374,8 @@ map <leader>aa :noa w<cr>
 nnoremap Y y$
 
 :command! Format call CocAction('format')
+
+" Keeps everything centered and doesn't move cursor when joining lines
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
