@@ -132,7 +132,7 @@ let g:gitgutter_enabled=1
 nmap gk <Plug>(GitGutterPrevHunk)
 nmap gj <Plug>(GitGutterNextHunk)
 nmap gs <Plug>(GitGutterStageHunk)
-nmap gu <Plug>(GitGutterUndoHunk)
+nmap guh <Plug>(GitGutterUndoHunk)
 nmap <leader>d <Plug>(GitGutterPreviewHunk)
 nnoremap <leader>g :G<CR>
 " Vim Fugitive
