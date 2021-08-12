@@ -173,11 +173,12 @@ highlight LineNr guibg=NONE
 hi SpellBad ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi SpellCap ctermfg=015 ctermbg=124 guifg=white guibg=red
 hi MatchParen cterm=none ctermbg=darkblue ctermfg=white
-hi CursorLine cterm=NONE ctermbg=black ctermfg=white guibg=darkred guifg=white
 hi LineNr ctermfg=green ctermbg=black
-hi CursorLineNr term=bold gui=bold guifg=black ctermfg=black ctermbg=lightblue
 hi Folded ctermbg=242 ctermfg=50
 hi CursorLineNr cterm=NONE ctermbg=15 ctermfg=8 gui=NONE guibg=NONE guifg=#ffffff
 hi DiffDelete ctermfg=253 ctermbg=237 guifg=red guibg=NONE
 hi DiffAdd ctermfg=253 ctermbg=237 guifg=green guibg=NONE
 hi EndOfBuffer guibg=NONE ctermbg=NONE
+" Set Cursor Line
+set cursorline
+hi CursorLine term=bold cterm=bold guibg=Grey10

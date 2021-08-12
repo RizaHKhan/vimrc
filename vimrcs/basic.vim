@@ -203,7 +203,7 @@ nnoremap tk :tablast<CR>
 map to :tabonly<cr>
 map tc :tabe %<cr>
 map tm :tabmove
-map t<leader> :tabnext
+map t<leader> :tabnext<CR>
 
 " Open terminal history and post whatever is under the line
 " map te yyq:p
