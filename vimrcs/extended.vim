@@ -182,3 +182,6 @@ hi EndOfBuffer guibg=NONE ctermbg=NONE
 " Set Cursor Line
 set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey10
+set cursorcolumn
+hi CursorColumn term=bold cterm=bold guibg=Grey10
+
