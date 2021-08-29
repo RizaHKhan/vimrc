@@ -23,8 +23,6 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'noahfrederick/vim-laravel'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-surround'
-  Plug 'arnaud-lb/vim-php-namespace'
-  Plug 'stephpy/vim-php-cs-fixer'
   Plug 'godlygeek/tabular'
 call plug#end()
 
@@ -404,22 +402,6 @@ let $FZF_DEFAULT_COMMAND = 'rg --files --ignore-case --hidden -g "!{.git,node_mo
 command! -bang -nargs=? -complete=dir Files
      \ call fzf#vim#files(<q-args>, fzf#vim#with_preview(), <bang>0)
 
-" Php Namespaces
-function! IPhpInsertUse()
-    call PhpInsertUse()
-    call feedkeys('a',  'n')
-endfunction
-autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
-autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
-
-function! IPhpExpandClass()
-    call PhpExpandClass()
-    call feedkeys('a', 'n')
-endfunction
-autocmd FileType php inoremap <Leader>e <Esc>:call IPhpExpandClass()<CR>
-autocmd FileType php noremap <Leader>e :call PhpExpandClass()<CR>
-
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""" Tabularize """""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -438,3 +420,5 @@ endfunction
 
 " Types out Tabularize in terminal mode and waits for symbol to adjust by
 vnoremap <leader>t :Tabularize /
+
+autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
