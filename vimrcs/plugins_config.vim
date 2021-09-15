@@ -17,9 +17,9 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'othree/html5.vim'
   Plug 'morhetz/gruvbox'
-  Plug 'tpope/vim-dispatch'             "| Optional
-  Plug 'tpope/vim-projectionist'        "|
-  Plug 'noahfrederick/vim-composer'     "|
+  Plug 'tpope/vim-dispatch'
+  Plug 'tpope/vim-projectionist'
+  Plug 'noahfrederick/vim-composer'
   Plug 'noahfrederick/vim-laravel'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-surround'
