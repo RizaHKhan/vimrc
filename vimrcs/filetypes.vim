@@ -6,6 +6,8 @@ au FileType javascript setl fen
 au FileType javascript setl nocindent
 
 au FileType javascript imap <C-t> console.log(
+au FileType vue imap <C-t> console.log(
+au FileType ts imap <C-t> console.log(
 
 function! JavaScriptFold()
     setl foldmethod=syntax
