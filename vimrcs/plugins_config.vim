@@ -2,6 +2,7 @@
 " PLUG
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/my_plugins')
+  Plug 'junegunn/vim-peekaboo'
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'mattn/emmet-vim'
