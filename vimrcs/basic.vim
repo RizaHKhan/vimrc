@@ -84,7 +84,7 @@ set hlsearch
 " Makes search act like search in modern browsers
 set incsearch
 
-" Don't redraw while executing macros (good performance config)
+" Don't redraw while executing macros (good performance configuration)
 set lazyredraw
 
 " For regular expressions turn magic on
