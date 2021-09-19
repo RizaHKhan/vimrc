@@ -365,7 +365,7 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
-" Saving wihout formatting
+" Saving without formatting
 map <leader>aa :noa w<cr>
 
 " Capital Y
