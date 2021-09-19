@@ -5,7 +5,7 @@
 set history=500
 set shell=/bin/zsh
 
-" Enable file type plugins
+" Enable filetype plugins
 filetype plugin on
 filetype indent on
 
