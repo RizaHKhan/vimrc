@@ -84,7 +84,7 @@ set hlsearch
 " Makes search act like search in modern browsers
 set incsearch
 
-" Don't redraw while executing macros (good performance configuration)
+" Don't redraw while executing macros (good performance config)
 set lazyredraw
 
 " For regular expressions turn magic on
@@ -365,7 +365,7 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
-" Saving without formatting
+" Saving wihout formatting
 map <leader>aa :noa w<cr>
 
 " Capital Y
