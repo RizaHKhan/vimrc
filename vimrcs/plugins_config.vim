@@ -26,6 +26,8 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'editorconfig/editorconfig-vim'
   Plug 'tpope/vim-surround'
   Plug 'godlygeek/tabular'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -338,7 +340,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 map <leader>f :Files<CR>
 nnoremap <leader>r :Rg<CR>
 map <leader>b :Buffers<CR>
-nnoremap <leader>t :Tags<CR>
+nnoremap <leader>t :Telescope<CR>
 nnoremap <leader>m :Marks<CR>
 
 let g:fzf_tags_command = 'ctags -R'
