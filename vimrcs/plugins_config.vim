@@ -2,6 +2,8 @@
 " PLUG
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 call plug#begin('~/.vim_runtime/my_plugins')
+  Plug 'tpope/vim-fugitive'
+  Plug 'idanarye/vim-merginal'
   Plug 'junegunn/vim-peekaboo'
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -28,16 +30,13 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'godlygeek/tabular'
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'vim-airline/vim-airline'
 call plug#end()
 
 """"""""""""""""""""""""""""""
 " => Load pathogen paths - Try to use Plug instead
 """"""""""""""""""""""""""""""
 let s:vim_runtime = expand('<sfile>:p:h')."/.."
-call pathogen#infect(s:vim_runtime.'/sources_forked/{}')
-call pathogen#infect(s:vim_runtime.'/sources_non_forked/{}')
-" call pathogen#infect(s:vim_runtime.'/my_plugins/{}')
-call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -209,8 +208,8 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap ej <Plug>(coc-diagnostic-prev)
+nmap es <Plug>(coc-diagnostic-next)
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
