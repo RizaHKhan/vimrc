@@ -4,6 +4,8 @@
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'tpope/vim-fugitive'
   Plug 'idanarye/vim-merginal'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'jiangmiao/auto-pairs'
   Plug 'junegunn/vim-peekaboo'
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
