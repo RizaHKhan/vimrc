@@ -127,7 +127,3 @@ Like with many other
   "bladeLinter.lintOnSave": true
 }
 ```
-
-
-
-
