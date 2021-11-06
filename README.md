@@ -53,9 +53,7 @@ Like with many other
 
 ### Language Servers
 
-
 ## Installation
-
 
 # Coc
 
@@ -127,3 +125,7 @@ Like with many other
   "bladeLinter.lintOnSave": true
 }
 ```
+
+# FAQ
+
+## Merginal Not Working

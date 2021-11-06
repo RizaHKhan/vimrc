@@ -4,6 +4,7 @@
 call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'tpope/vim-fugitive'
   Plug 'idanarye/vim-merginal'
+  Plug 'Shougo/vimproc.vim', {'do' : 'make'}
   Plug 'airblade/vim-gitgutter'
   Plug 'jiangmiao/auto-pairs'
   Plug 'junegunn/vim-peekaboo'
@@ -11,7 +12,6 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'mattn/emmet-vim'
   Plug 'APZelos/blamer.nvim'
-  Plug 'idanarye/vim-merginal'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
   Plug 'junegunn/fzf.vim'
   Plug 'airblade/vim-rooter'
@@ -21,7 +21,7 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'othree/html5.vim'
-  Plug 'morhetz/gruvbox'
+  " Plug 'morhetz/gruvbox'
   Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-projectionist'
@@ -422,7 +422,7 @@ endfunction
 " Types out Tabularize in terminal mode and waits for symbol to adjust by
 vnoremap <leader>t :Tabularize /
 
-autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
 
 "" Coc Terminal ""
 map <silent><nowait> <space>t <Plug>(coc-terminal-toggle)
