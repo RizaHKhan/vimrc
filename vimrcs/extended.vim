@@ -174,4 +174,3 @@ set cursorline
 hi CursorLine term=bold cterm=bold guibg=Grey10
 set cursorcolumn
 hi CursorColumn term=bold cterm=bold guibg=Grey10
-

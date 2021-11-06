@@ -52,3 +52,82 @@ Like with many other
 ### File Explorer
 
 ### Language Servers
+
+
+## Installation
+
+
+# Coc
+
+## Dependencies
+
+```
+:CocInstall coc-prettier
+:CocInstall coc-tsserver
+:CocInstall coc-phpls
+:CocInstall @yaegassy/coc-volar
+:CocInstall coc-eslint
+:CocInstall coc-json
+
+```
+
+## Config
+
+```
+{
+  "coc.preferences.formatOnSaveFiletypes": [
+    "*"
+  ],
+  "eslint.autoFixOnSave": true,
+  "eslint.format.enable": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": { "extensions": [".html", ".js", ".vue", ".jsx"] },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "diagnostic.refreshOnInsertMode": true,
+  "diagnostic.messageDelay": 500,
+  "diagnostic-languageserver.filetypes": {
+    "javascript": "eslint"
+  },
+  "diagnostic-languageserver.linters": {
+    "eslint": {
+      "command": "./node_modules/.bin/eslint",
+      "rootPatterns": [".git", "package.json"],
+      "debounce": 100,
+      "args": ["--stdin", "--stdin-filename", "%filepath", "--format", "json"],
+      "sourceName": "eslint",
+      "parseJson": {
+        "errorsRoot": "[0].messages",
+        "line": "line",
+        "column": "column",
+        "endLine”: “endLine",
+        "endColumn": "endColumn",
+        "message": "${message} [${ruleId}]",
+        "security": "severity"
+      },
+      "securities": {
+        "2": "error",
+        "1": "warning"
+      }
+    }
+  },
+  "volar.enable": true,
+  "volar.formatting.enable": true,
+  "vetur.format.defaultFormatter.pug": "prettier",
+  "vetur.ignoreProjectWarning": true,
+  "typescript.suggestionActions.enabled": false,
+  "bladeFormatter.enable": true,
+  "bladeLinter.enable": true,
+  "bladeLinter.lintOnSave": true
+}
+```
+
+
+
+
