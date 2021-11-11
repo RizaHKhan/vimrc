@@ -423,7 +423,3 @@ endfunction
 vnoremap <leader>t :Tabularize /
 
 " autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
-
-"" Coc Terminal ""
-map <silent><nowait> <leader><leader>t <Plug>(coc-terminal-toggle)
-tmap <silent><nowait> <space>t <C-\><C-n><Plug>(coc-terminal-toggle)
