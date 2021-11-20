@@ -73,18 +73,15 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 :CocInstall coc-json
 :CocInstall coc-snippets
 
-```
-
 FZF:
+
 ```
-
 sudo apt-get install fzf
-
 ```
 
 RIPGREP:
-```
 
+```
 sudo apt-get install ripgrep
 
 ```
@@ -149,6 +146,3 @@ sudo apt-get install ripgrep
 ```
 
 # FAQ
-
-## Merginal Not Working
-```
