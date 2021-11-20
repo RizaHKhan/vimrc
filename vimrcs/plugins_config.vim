@@ -14,6 +14,7 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'APZelos/blamer.nvim'
   Plug 'junegunn/fzf', { 'do': { -> fzf#install()  }  }
   Plug 'junegunn/fzf.vim'
+  Plug 'ryanoasis/vim-devicons'
   Plug 'airblade/vim-rooter'
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc'  }
   Plug 'preservim/nerdtree'
