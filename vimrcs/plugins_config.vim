@@ -423,4 +423,6 @@ endfunction
 " Types out Tabularize in terminal mode and waits for symbol to adjust by
 vnoremap <leader>t :Tabularize /
 
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
 " autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
