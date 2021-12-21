@@ -65,6 +65,9 @@ Plug:
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
 
+Coc Plugins:
+
+```
 :CocInstall coc-prettier
 :CocInstall coc-tsserver
 :CocInstall coc-phpls
@@ -72,6 +75,8 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 :CocInstall coc-eslint
 :CocInstall coc-json
 :CocInstall coc-snippets
+
+```
 
 FZF:
 
