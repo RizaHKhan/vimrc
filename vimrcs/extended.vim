@@ -30,7 +30,7 @@ let g:gruvbox_italic = '1'
 let g:gruvbox_italicize_strings = '1'
 let g:gruvbox_contrast_dark = 'soft'
 
-colorscheme tokyonight
+colorscheme gruvbox
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
@@ -129,7 +129,6 @@ map <leader>p :cp<cr>
 " Make sure that enter is never overriden in the quickfix window
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -170,7 +169,5 @@ hi DiffDelete ctermfg=253 ctermbg=237 guifg=red guibg=NONE
 hi DiffAdd ctermfg=253 ctermbg=237 guifg=green guibg=NONE
 hi EndOfBuffer guibg=NONE ctermbg=NONE
 " Set Cursor Line
-set cursorline
-hi CursorLine term=bold cterm=bold guibg=LightGrey10
 set cursorcolumn
-hi CursorColumn term=bold cterm=bold guibg=Grey7
+hi CursorColumn term=bold cterm=bold guibg=Grey18

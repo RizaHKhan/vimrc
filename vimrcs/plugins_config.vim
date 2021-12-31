@@ -22,8 +22,8 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'maxmellon/vim-jsx-pretty'
   Plug 'othree/html5.vim'
-  " Plug 'morhetz/gruvbox'
-  Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+  Plug 'morhetz/gruvbox'
+  " Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
   Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-projectionist'
   Plug 'noahfrederick/vim-composer'
