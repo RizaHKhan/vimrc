@@ -344,7 +344,15 @@ set path=**
 set wildignore+=*/node_modules/*
 
 " Remove trailing spaces upon save
-autocmd BufWritePre * %s/\s\+$//e
+" autocmd BufWritePre * %s/\s\+$//e
+function! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 set nowrap
 
@@ -403,4 +411,23 @@ autocmd BufRead *.twig set syntax=html filetype=html
 " => Markdown
 """"""""""""""""""""""""""""""
 let vim_markdown_folding_disabled = 1
+let g:syntastic_auto_jump = 0
+
+" Fast insertion of semi-colon
+nmap ;; <Esc>A;<Esc>
+nmap ,, <Esc>A,<Esc>
+
+" I haven't found how to hide this function (yet)
+function! RestoreRegister()
+  let @" = s:restore_reg
+  return ''
+endfunction
+
+function! s:Repl()
+    let s:restore_reg = @"
+    return "p@=RestoreRegister()\<cr>"
+endfunction
+
+" NB: this supports "rp that replaces the selection by the contents of @r
+vnoremap <silent> <expr> p <sid>Repl()
 
