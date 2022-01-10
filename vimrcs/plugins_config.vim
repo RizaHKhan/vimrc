@@ -34,6 +34,7 @@ call plug#begin('~/.vim_runtime/my_plugins')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'vim-airline/vim-airline'
+  Plug 'akinsho/toggleterm.nvim'
 call plug#end()
 
 """"""""""""""""""""""""""""""
@@ -426,3 +427,15 @@ vnoremap <leader>t :Tabularize /
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 
 " autocmd! FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+
+" set
+let g:toggleterm_terminal_mapping = '<C-t>'
+" or manually...
+autocmd TermEnter term://*toggleterm#*
+      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+
+" By applying the mappings this way you can pass a count to your
+" mapping to open a specific window.
+" For example: 2<C-t> will open terminal 2
+nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
+inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>

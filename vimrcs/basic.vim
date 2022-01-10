@@ -415,7 +415,7 @@ let g:syntastic_auto_jump = 0
 
 " Fast insertion of semi-colon
 nmap ;; <Esc>A;<Esc>
-nmap ,, <Esc>A,<Esc>
+" nmap ,, <Esc>A,<Esc>
 
 " I haven't found how to hide this function (yet)
 function! RestoreRegister()
